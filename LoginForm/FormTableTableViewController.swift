@@ -20,8 +20,16 @@ class FormTableTableViewController: UITableViewController {
     func keyboardAppeared(notification: Notification) {
         let userinfo = notification.userInfo
         let keyboardSize = (userinfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue
-        let edgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: (keyboardSize?.height)!, right: 0.0)
-        tableView.contentInset = edgeInsets
+//        let edgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: (keyboardSize?.height)!, right: 0.0)
+//        tableView.contentInset = edgeInsets
+//        
+//        var rect = view.frame
+//        
+//        rect.size.height -= (keyboardSize?.height)!
+        
+        UIView.animateWithDuration(0.1, animations: { () -> Void in
+            bottomConstraint.constant = keyboardSize.size.height + 20
+        })
         
         
     }
