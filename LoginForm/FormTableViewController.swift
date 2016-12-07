@@ -9,7 +9,7 @@
 import UIKit
 
 class FormTableViewController: UITableViewController {
-
+    
     var cellsObject = [CustomCellTableViewCell]()
     
     override func viewDidLoad() {
@@ -83,26 +83,23 @@ class FormTableViewController: UITableViewController {
         
         let newCell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! CustomCellTableViewCell
         
-        newCell.firstName?.text = "first name in cell for row at index"
-        newCell.lastName.text = "lastname in cell for row"
-
-        cellsObject.insert(newCell, at: row)
+        newCell.tag = row
         
         return newCell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        
-        let cell = tableView.cellForRow(at: indexPath) as! CustomCellTableViewCell
-        print(cell.firstName?.text!)
-        print(cellsObject[1].firstName)
-        if indexPath.row == 9 {
-            let user = User()
-            
-//            let jsonUser = try JSONSerialization.
-        }
-        
-    }
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+//        
+//        let cell = tableView.cellForRow(at: indexPath) as! CustomCellTableViewCell
+//        print(cell.firstName?.text!)
+//        print(cellsObject[1].firstName)
+//        if indexPath.row == 9 {
+//            let user = User()
+//            
+////            let jsonUser = try JSONSerialization.
+//        }
+//        
+//    }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         
@@ -168,12 +165,71 @@ class FormTableViewController: UITableViewController {
         return true
     }
     */
-
     
+    @IBAction func birthdayTextBegin(_ sender: UITextField) {
+        let datePicker = UIDatePicker()
+        
+        datePicker.datePickerMode = UIDatePickerMode.date
+        sender.inputView = datePicker
+        datePicker.addTarget(self, action: #selector(FormTableViewController.handleDatePicker(sender:)), for: UIControlEvents.valueChanged)
+        
+    }
+    
+    func handleDatePicker(sender: UIDatePicker) {
+        let birthdayCell = self.tableView.viewWithTag(5) as! CustomCellTableViewCell
+        var dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        birthdayCell.birthDay.text = dateFormatter.string(from: sender.date)
+    }
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        let user = User()
+        
+        let cell1 = self.tableView.viewWithTag(1) as! CustomCellTableViewCell
+        let cell2 = self.tableView.viewWithTag(2) as! CustomCellTableViewCell
+        let cell3 = self.tableView.viewWithTag(3) as! CustomCellTableViewCell
+        let cell4 = self.tableView.viewWithTag(4) as! CustomCellTableViewCell
+        let cell5 = self.tableView.viewWithTag(5) as! CustomCellTableViewCell
+        let cell6 = self.tableView.viewWithTag(6) as! CustomCellTableViewCell
+        let cell9 = self.tableView.viewWithTag(9) as! CustomCellTableViewCell
+        
+        user.firstName = cell1.firstName.text
+        user.lastName = cell1.lastName.text
+        user.email = cell2.email.text
+        user.password = cell3.password.text
+        user.phoneNumber = Int64(cell4.phoneNumber.text!)
+        user.birthDay = cell5.birthDay.text
+        if cell6.gender.selectedSegmentIndex == 1 {
+            user.gender = "Male"
+        }else{
+            user.gender = "Female"
+        }
+        
+        var userData = [String : String]()
+        userData["firstname"] = cell1.firstName.text
+        userData["lastname"] = cell1.lastName.text
+        userData["email"] = cell2.email.text
+        userData["password"] = cell3.password.text
+        userData["phonenumber"] = cell4.phoneNumber.text
+        userData["birthday"] = cell5.birthDay.text
+        if cell6.gender.selectedSegmentIndex == 1{
+            userData["gender"] = "male"
+        }else{
+            userData["gender"] = "female"
+        }
+        
+        if segue.identifier == "toShowRecordsSegue"{
+            if let destinationVC = segue.destination as? UserDetailsTableViewController{
+                destinationVC.userDetails = userData
+            }
+        }
+        
+//        let showVC = UserDetailsTableViewController()
+//        showVC.userDetails = userData
+//        self.present(showVC, animated: true, completion: nil)
     }
  
 

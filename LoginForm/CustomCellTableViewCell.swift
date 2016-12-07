@@ -11,7 +11,7 @@ import UIKit
 var jsonData = [[String:String]]()
 
 class CustomCellTableViewCell: UITableViewCell {
-    @IBOutlet var firstName: UITextField?
+    @IBOutlet var firstName: UITextField!
     @IBOutlet var lastName: UITextField!
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
@@ -19,6 +19,7 @@ class CustomCellTableViewCell: UITableViewCell {
     @IBOutlet var birthDay: UITextField!
     @IBOutlet var gender: UISegmentedControl!
     @IBOutlet var joinNowButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

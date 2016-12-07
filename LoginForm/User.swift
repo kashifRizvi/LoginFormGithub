@@ -16,6 +16,7 @@ class User {
     var email : String?
     var password : String?
     var birthDay : String?
+    var gender : String?
     
     init(firstName:String?, lastName:String?, email:String?, password:String?, phoneNumber:Int64?, birthDay:String? ) {
         self.firstName = firstName
