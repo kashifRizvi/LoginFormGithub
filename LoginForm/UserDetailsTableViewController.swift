@@ -1,38 +1,24 @@
 //
-//  FormTableTableViewController.swift
+//  UserDetailsTableViewController.swift
 //  LoginForm
 //
-//  Created by Kashif on 06/12/16.
+//  Created by Kashif Rizvi on 07/12/16.
 //  Copyright © 2016 Kashif. All rights reserved.
 //
 
 import UIKit
 
-class FormTableTableViewController: UITableViewController {
+class UserDetailsTableViewController: UITableViewController {
 
+    var userDetails = [String:String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: Selector("keyboardAppeared:"), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: Selector("keyboardGetsHidden:"), name: NSNotification.Name.UIKeyboardDidHide, object: nil)
         
     }
     
-    func keyboardAppeared(notification: Notification) {
-        let userinfo = notification.userInfo
-        let keyboardSize = (userinfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue
-//        let edgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: (keyboardSize?.height)!, right: 0.0)
-//        tableView.contentInset = edgeInsets
-//        
-//        var rect = view.frame
-//        
-//        rect.size.height -= (keyboardSize?.height)!
-        
-        UIView.animateWithDuration(0.1, animations: { () -> Void in
-            bottomConstraint.constant = keyboardSize.size.height + 20
-        })
-        
-        
-    }
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,20 +32,34 @@ class FormTableTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return userDetails.count
     }
-    
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        
+        switch indexPath.row {
+        case 0:
+            cell.textLabel?.text = "First Name: "+userDetails["firstname"]!
+        case 1:
+            cell.textLabel?.text = "Last Name: "+userDetails["lastname"]!
+        case 2:
+            cell.textLabel?.text = "Email: "+userDetails["email"]!
+        case 3:
+            cell.textLabel?.text = "Password: "+userDetails["password"]!
+        case 4:
+            cell.textLabel?.text = "Phone Number: "+userDetails["phonenumber"]!
+        case 5:
+            cell.textLabel?.text = "Birthday: "+userDetails["birthday"]!
+        default:
+            cell.textLabel?.text = "Data Not Available"
+        }
+        
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.

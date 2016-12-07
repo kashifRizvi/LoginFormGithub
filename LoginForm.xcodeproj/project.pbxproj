@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B4FEA981DF696D8007337DC /* FormTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4FEA971DF696D8007337DC /* FormTableTableViewController.swift */; };
+		4B4FEA981DF696D8007337DC /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4FEA971DF696D8007337DC /* FormTableViewController.swift */; };
 		4B592B0A1DF1A5B800FB91DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B592B091DF1A5B800FB91DE /* AppDelegate.swift */; };
 		4B592B0C1DF1A5B800FB91DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B592B0B1DF1A5B800FB91DE /* ViewController.swift */; };
 		4B592B0F1DF1A5B800FB91DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B592B0D1DF1A5B800FB91DE /* Main.storyboard */; };
@@ -15,6 +15,9 @@
 		4B592B141DF1A5B800FB91DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B592B121DF1A5B800FB91DE /* LaunchScreen.storyboard */; };
 		4B592B1F1DF1A5B900FB91DE /* LoginFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B592B1E1DF1A5B900FB91DE /* LoginFormTests.swift */; };
 		4B592B2A1DF1A5B900FB91DE /* LoginFormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B592B291DF1A5B900FB91DE /* LoginFormUITests.swift */; };
+		D457E3F41DF73CB30021811B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D457E3F31DF73CB20021811B /* User.swift */; };
+		D48E30501DF72F5900699161 /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48E304F1DF72F5900699161 /* CustomCellTableViewCell.swift */; };
+		D4FAA8AD1DF74F3C00D672D2 /* UserDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FAA8AC1DF74F3C00D672D2 /* UserDetailsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B4FEA971DF696D8007337DC /* FormTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableTableViewController.swift; sourceTree = "<group>"; };
+		4B4FEA971DF696D8007337DC /* FormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
 		4B592B061DF1A5B800FB91DE /* LoginForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B592B091DF1A5B800FB91DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B592B0B1DF1A5B800FB91DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		4B592B251DF1A5B900FB91DE /* LoginFormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginFormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B592B291DF1A5B900FB91DE /* LoginFormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormUITests.swift; sourceTree = "<group>"; };
 		4B592B2B1DF1A5B900FB91DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D457E3F31DF73CB20021811B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D48E304F1DF72F5900699161 /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		D4FAA8AC1DF74F3C00D672D2 /* UserDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,11 @@
 			children = (
 				4B592B091DF1A5B800FB91DE /* AppDelegate.swift */,
 				4B592B0B1DF1A5B800FB91DE /* ViewController.swift */,
-				4B4FEA971DF696D8007337DC /* FormTableTableViewController.swift */,
+				4B4FEA971DF696D8007337DC /* FormTableViewController.swift */,
 				4B592B0D1DF1A5B800FB91DE /* Main.storyboard */,
+				D457E3F31DF73CB20021811B /* User.swift */,
+				D48E304F1DF72F5900699161 /* CustomCellTableViewCell.swift */,
+				D4FAA8AC1DF74F3C00D672D2 /* UserDetailsTableViewController.swift */,
 				4B592B101DF1A5B800FB91DE /* Assets.xcassets */,
 				4B592B121DF1A5B800FB91DE /* LaunchScreen.storyboard */,
 				4B592B151DF1A5B800FB91DE /* Info.plist */,
@@ -262,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B4FEA981DF696D8007337DC /* FormTableTableViewController.swift in Sources */,
+				4B4FEA981DF696D8007337DC /* FormTableViewController.swift in Sources */,
 				4B592B0C1DF1A5B800FB91DE /* ViewController.swift in Sources */,
+				D48E30501DF72F5900699161 /* CustomCellTableViewCell.swift in Sources */,
+				D457E3F41DF73CB30021811B /* User.swift in Sources */,
 				4B592B0A1DF1A5B800FB91DE /* AppDelegate.swift in Sources */,
+				D4FAA8AD1DF74F3C00D672D2 /* UserDetailsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoginForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.LoginForm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoginForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.LoginForm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,6 +454,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LoginFormTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.LoginFormTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -454,6 +469,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LoginFormTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.LoginFormTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,6 +483,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = LoginFormUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.LoginFormUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,6 +497,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = LoginFormUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.LoginFormUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
