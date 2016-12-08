@@ -25,26 +25,26 @@ class CustomCellTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-
-    @IBAction func saveForm(_ sender: UIButton) {
-        var user = User()
-//        var user = User(firstName: firstName.text, lastName: lastName.text, email: email.text, password: password.text, phoneNumber: Int64(phoneNumber.text!) as Int64?, birthDay: birthDay.text)
-        print(firstName?.text)
-        user.lastName = lastName.text
-        
-        let jsonCurrentUser = convertToDictionary(user: user)
-        jsonData.append(jsonCurrentUser)
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let userDetailsVC = storyboard.instantiateViewController(withIdentifier: "UserDetailsTableViewController") as! UserDetailsTableViewController
-        
-        
-        
-    }
-    
-    func convertToDictionary (user: User) -> [String:String]{
-        return ["firstname" : user.firstName ?? "Not Available", "lastname" : user.lastName ?? "Not Available", "email" : user.email ?? "Not Available", "phonenumber" : String(describing: user.phoneNumber) as String? ?? "Not Available", "password" : user.password ?? "Not Available", "birthday" : user.birthDay ?? "Not Available"]
-    }
+//
+//    @IBAction func saveForm(_ sender: UIButton) {
+//        var user = User()
+////        var user = User(firstName: firstName.text, lastName: lastName.text, email: email.text, password: password.text, phoneNumber: Int64(phoneNumber.text!) as Int64?, birthDay: birthDay.text)
+//        print(firstName?.text)
+//        user.lastName = lastName.text
+//        
+//        let jsonCurrentUser = convertToDictionary(user: user)
+//        jsonData.append(jsonCurrentUser)
+//        
+//        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//        let userDetailsVC = storyboard.instantiateViewController(withIdentifier: "UserDetailsTableViewController") as! UserDetailsTableViewController
+//        
+//        
+//        
+//    }
+//    
+//    func convertToDictionary (user: User) -> [String:String]{
+//        return ["firstname" : user.firstName ?? "Not Available", "lastname" : user.lastName ?? "Not Available", "email" : user.email ?? "Not Available", "phonenumber" : String(describing: user.phoneNumber) as String? ?? "Not Available", "password" : user.password ?? "Not Available", "birthday" : user.birthDay ?? "Not Available"]
+//    }
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {

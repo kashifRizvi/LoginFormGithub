@@ -14,6 +14,11 @@ class FormTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.estimatedRowHeight = 30
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
 //        NotificationCenter.default.addObserver(self, selector: #selector(FormTableTableViewController.keyboardAppeared), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
 //        NotificationCenter.default.addObserver(self, selector: #selector(FormTableTableViewController.keyboardDisappeared), name: NSNotification.Name.UIKeyboardDidHide, object: nil)
         
@@ -33,6 +38,7 @@ class FormTableViewController: UITableViewController {
         print("Keyboard Disappeared!!")
 
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -94,42 +100,41 @@ class FormTableViewController: UITableViewController {
 //        print(cell.firstName?.text!)
 //        print(cellsObject[1].firstName)
 //        if indexPath.row == 9 {
-//            let user = User()
-//            
-////            let jsonUser = try JSONSerialization.
 //        }
 //        
 //    }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
-        
-        
-        switch indexPath.row {
-        case 0:
-            return CGFloat(55)
-        case 1:
-            return CGFloat(50)
-        case 2:
-            return CGFloat(50)
-        case 3:
-            return CGFloat(50)
-        case 4:
-            return CGFloat(50)
-        case 5:
-            return CGFloat(50)
-        case 6:
-            return CGFloat(50)
-        case 7:
-            return CGFloat(75)
-        case 8:
-            return CGFloat(100)
-        case 9:
-            return CGFloat(50)
-        default:
-            return 50
-        }
-        
-    }
+//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
+//        
+//        
+//        
+//        
+//        switch indexPath.row {
+//        case 0:
+//            return tableView.bounds.height * 0.103773585
+//        case 1:
+//            return tableView.bounds.height * 0.0943396226
+//        case 2:
+//            return tableView.bounds.height * 0.0943396226
+//        case 3:
+//            return tableView.bounds.height * 0.0943396226
+//        case 4:
+//            return tableView.bounds.height * 0.0943396226
+//        case 5:
+//            return tableView.bounds.height * 0.0943396226
+//        case 6:
+//            return tableView.bounds.height * 0.0943396226
+//        case 7:
+//            return tableView.bounds.height * 0.141509434
+//        case 8:
+//            return tableView.bounds.height * 0.188679245
+//        case 9:
+//            return tableView.bounds.height * 0.0943396226
+//        default:
+//            return 50
+//        }
+//        
+//    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -177,7 +182,7 @@ class FormTableViewController: UITableViewController {
     
     func handleDatePicker(sender: UIDatePicker) {
         let birthdayCell = self.tableView.viewWithTag(5) as! CustomCellTableViewCell
-        var dateFormatter = DateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
         birthdayCell.birthDay.text = dateFormatter.string(from: sender.date)
@@ -194,7 +199,6 @@ class FormTableViewController: UITableViewController {
         let cell4 = self.tableView.viewWithTag(4) as! CustomCellTableViewCell
         let cell5 = self.tableView.viewWithTag(5) as! CustomCellTableViewCell
         let cell6 = self.tableView.viewWithTag(6) as! CustomCellTableViewCell
-        let cell9 = self.tableView.viewWithTag(9) as! CustomCellTableViewCell
         
         user.firstName = cell1.firstName.text
         user.lastName = cell1.lastName.text
@@ -223,7 +227,9 @@ class FormTableViewController: UITableViewController {
         
         if segue.identifier == "toShowRecordsSegue"{
             if let destinationVC = segue.destination as? UserDetailsTableViewController{
+                print(userData)
                 destinationVC.userDetails = userData
+//                present(destinationVC, animated: true, completion: nil)
             }
         }
         
