@@ -58,7 +58,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jvD-50-pZL" id="uSt-fq-qqz">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAU-rs-aYS">
@@ -78,7 +78,7 @@
                                 <rect key="frame" x="0.0" y="83" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pui-Hy-RPb" id="Q2B-7J-3SP">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6au-FC-E5l">
@@ -116,7 +116,7 @@
                                 <rect key="frame" x="0.0" y="133" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h96-hV-6hH" id="bWC-0q-ctu">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NLw-Nl-Smh">
@@ -144,7 +144,7 @@
                                 <rect key="frame" x="0.0" y="183" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="De2-aZ-e26" id="lwX-8i-hsG">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EEB-Z1-d1N">
@@ -172,7 +172,7 @@
                                 <rect key="frame" x="0.0" y="233" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dii-LH-Dr7" id="rf4-VD-eCe">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1iT-px-Ns9">
@@ -200,7 +200,7 @@
                                 <rect key="frame" x="0.0" y="283" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ih5-C6-mfp" id="ybA-4j-Ael">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mLT-1T-8bz">
@@ -227,7 +227,7 @@
                                     <outlet property="birthDay" destination="mLT-1T-8bz" id="vVX-Hk-XN9"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell6" rowHeight="49" id="Dtm-Df-Qhr" customClass="CustomCellTableViewCell" customModule="LoginForm" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell6" rowHeight="49" id="Dtm-Df-Qhr" customClass="CustomCellTableViewCell" customModule="LoginForm" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="333" width="375" height="49"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dtm-Df-Qhr" id="ezc-0x-tO1">
@@ -235,7 +235,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oJm-4o-lbm">
-                                            <rect key="frame" x="33" y="8" width="309" height="33.5"/>
+                                            <rect key="frame" x="8" y="8" width="359" height="33.5"/>
                                             <segments>
                                                 <segment title="Female"/>
                                                 <segment title="Male"/>
@@ -243,10 +243,10 @@
                                         </segmentedControl>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="oJm-4o-lbm" secondAttribute="bottom" id="0ID-Oe-loh"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="oJm-4o-lbm" secondAttribute="trailing" constant="25" id="D8W-oy-bhQ"/>
-                                        <constraint firstItem="oJm-4o-lbm" firstAttribute="leading" secondItem="ezc-0x-tO1" secondAttribute="leadingMargin" constant="25" id="Kb1-8s-dUE"/>
-                                        <constraint firstItem="oJm-4o-lbm" firstAttribute="top" secondItem="ezc-0x-tO1" secondAttribute="topMargin" id="NH6-Ot-5oi"/>
+                                        <constraint firstItem="oJm-4o-lbm" firstAttribute="top" secondItem="ezc-0x-tO1" secondAttribute="topMargin" id="73A-8F-AgY"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="oJm-4o-lbm" secondAttribute="bottom" id="mIj-I8-2b5"/>
+                                        <constraint firstItem="oJm-4o-lbm" firstAttribute="leading" secondItem="ezc-0x-tO1" secondAttribute="leadingMargin" id="uJZ-OI-fh3"/>
+                                        <constraint firstItem="oJm-4o-lbm" firstAttribute="trailing" secondItem="ezc-0x-tO1" secondAttribute="trailingMargin" id="vAU-Cb-s7D"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -257,10 +257,10 @@
                                 <rect key="frame" x="0.0" y="382" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="muZ-xW-3OU" id="gnc-5d-hJj">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILO-Mf-jJj">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILO-Mf-jJj">
                                             <rect key="frame" x="16" y="-0.5" width="262.5" height="75.5"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="How did you hear about us? ">
@@ -292,11 +292,11 @@
                                 <rect key="frame" x="0.0" y="457" width="375" height="138"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BsW-V4-KyD" id="8KG-oc-cKh">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="247" horizontalCompressionResistancePriority="754" verticalCompressionResistancePriority="755" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdP-WP-Gv3">
-                                            <rect key="frame" x="68" y="8" width="239" height="121.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="247" horizontalCompressionResistancePriority="754" verticalCompressionResistancePriority="755" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdP-WP-Gv3">
+                                            <rect key="frame" x="68" y="8" width="239" height="121"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="By clicking Join Now you agree to ">
                                                     <attributes>
@@ -331,7 +331,6 @@
                                         <constraint firstItem="vdP-WP-Gv3" firstAttribute="top" secondItem="8KG-oc-cKh" secondAttribute="topMargin" id="5MC-cb-oYh"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="vdP-WP-Gv3" secondAttribute="trailing" constant="60" id="Z61-Hn-9p3"/>
                                         <constraint firstItem="vdP-WP-Gv3" firstAttribute="leading" secondItem="8KG-oc-cKh" secondAttribute="leadingMargin" constant="60" id="opo-OH-GgL"/>
-                                        <constraint firstItem="vdP-WP-Gv3" firstAttribute="centerY" secondItem="8KG-oc-cKh" secondAttribute="centerY" id="ozw-WI-UVE"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="vdP-WP-Gv3" secondAttribute="bottom" constant="0.5" id="sOM-kl-JQi"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -384,7 +383,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fWW-r1-pfS" id="BI4-rx-ER0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
